@@ -33,6 +33,7 @@ const app = new Vue({
       },
     ],
     newToDo: "",
+    currentState: false,
   },
 
   methods: {
@@ -48,6 +49,10 @@ const app = new Vue({
         completed: false,
       });
       this.newToDo = "";
+    },
+    changeStatusToDo(todo) {
+      console.log("click su testo");
+      todo.completed = !todo.completed;
     },
   },
 });
