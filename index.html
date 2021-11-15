@@ -59,8 +59,10 @@
             </span>
             <i class="fas fa-times delete" v-on:click="deleteToDo(index)"></i>
           </li>
+          <li v-if="todos.length < 1">
+            <h3>Non hai più niente da fare!</h3>
+          </li>
         </ul>
-        <h3 v-if="todos.length < 1">Non hai più niente da fare!</h3>
       </main>
     </div>
     <!-- Decorazione onda -->
