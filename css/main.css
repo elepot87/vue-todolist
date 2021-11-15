@@ -117,6 +117,10 @@ body {
   background-color: #9dcf78;
 }
 
+.delete:hover {
+  color: red;
+}
+
 /* Decorazione onda */
 .wave {
   position: fixed;
