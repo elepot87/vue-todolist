@@ -32,12 +32,21 @@ const app = new Vue({
         completed: true,
       },
     ],
+    newToDo: "",
   },
 
   methods: {
     deleteToDo(index) {
       const deleteToDo = this.todos.splice(index, 1);
       console.log(deleteToDo);
+    },
+
+    addToDo() {
+      console.log("add todo");
+      this.todos.push({
+        text: this.newToDo,
+        completed: false,
+      });
     },
   },
 });
