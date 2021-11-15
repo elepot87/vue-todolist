@@ -50,6 +50,7 @@ const app = new Vue({
       });
       this.newToDo = "";
     },
+
     changeStatusToDo(todo) {
       //   console.log("click su testo");
       //   if (todo.completed === false) {
