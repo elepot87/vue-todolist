@@ -37,7 +37,7 @@
 
       <!-- Add ToDo -->
       <section class="new-todo">
-        <input type="text" placeholder="Nuovo todo" v-model="newToDo" />
+        <input type="text" placeholder="Nuovo todo" v-model.trim="newToDo" />
         <button class="button" @click="addToDo">Aggiungi</button>
       </section>
 

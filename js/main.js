@@ -47,6 +47,7 @@ const app = new Vue({
         text: this.newToDo,
         completed: false,
       });
+      newToDo = "";
     },
   },
 });
