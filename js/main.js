@@ -33,4 +33,10 @@ const app = new Vue({
       },
     ],
   },
+
+  methods: {
+    deleteToDo() {
+      console.log("DELETE");
+    },
+  },
 });
