@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+/* Utilities */
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 10;
+}
+
+.button {
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: #9dcf78;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ccc;
+}
+
+/* Header */
+
+.app-header {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.app-header .logo {
+  width: 120px;
+}
+
+/* Add ToDo */
+
+.new-todo {
+  display: flex;
+  margin-top: 40px;
+}
+
+.new-todo input {
+  flex-grow: 1;
+  height: 30px;
+  margin-right: 18px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.new-todo input:hover,
+.new-todo input:focus {
+  border-color: #000;
+}
+
+/* ToDo List */
+.todos-section {
+  margin: 50px 0;
+}
+
+.todos-section .todos-list {
+  padding: 15px 30px;
+  background-color: #f2f2f2;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+}
+
+.todo {
+  display: flex;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.todo:first-child {
+  margin-top: 0px;
+}
+
+.todo .text {
+  position: relative;
+  flex-grow: 1;
+  padding: 0 30px;
+}
+
+.todos-list {
+  list-style: none;
+}
+
+.todo .text::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+}
+
+.todo .text.completed {
+  text-decoration: line-through;
+}
+
+.todo .text.completed::before {
+  background-color: #9dcf78;
+}
+
+/* Decorazione onda */
+.wave {
+  position: fixed;
+  bottom: 0;
+}
