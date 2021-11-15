@@ -38,11 +38,11 @@ const app = new Vue({
   methods: {
     deleteToDo(index) {
       const deleteToDo = this.todos.splice(index, 1);
-      console.log(deleteToDo);
+      //   console.log(deleteToDo);
     },
 
     addToDo() {
-      console.log("add todo");
+      //   console.log("add todo");
       this.todos.push({
         text: this.newToDo,
         completed: false,
