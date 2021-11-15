@@ -44,14 +44,16 @@
       <!-- Main -->
       <main class="todos-section">
         <ul class="todos-list">
-          <li class="todo">
-            <span class="text">Text ToDo here</span>
+          <li class="todo" v-for="todo in todos">
+            <span class="text" :class="{completed: todo.completed == true}">
+              {{todo.text}}
+            </span>
             <i class="fas fa-times delete"></i>
           </li>
-          <li class="todo">
-            <span class="text completed">Text ToDo here</span>
+          <!-- <li class="todo">
+            <span class="text completed"></span>
             <i class="fas fa-times delete"></i>
-          </li>
+          </li> -->
         </ul>
       </main>
     </div>
